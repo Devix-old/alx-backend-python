@@ -1,0 +1,1 @@
+for file in *.py; do echo '#!/usr/bin/env python3' | cat - "$file" > temp && mv temp "$file"; done
